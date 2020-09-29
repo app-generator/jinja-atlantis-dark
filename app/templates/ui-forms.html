@@ -7,355 +7,487 @@
 
 {% block content %}
 
-    <!-- Hero -->
-    <div class="section-header pb-6 bg-primary overflow-hidden text-center border-bottom border-light">
-    <div class="container z-2">
-        <div class="row mb-4 justify-content-center">
-            <div class="col-12 col-md-8 col-lg-7">
-                <h1 class="display-3 mb-4">Forms</h1>
-                <p class="lead">Examples for form control styles, layout options, and custom components for creating a wide variety of forms.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-6">
-                <div class="alert shadow-inset">
-                    <div class="d-flex">
-                        <div class="alert-inner--text">
-                            <span class="icon text-danger icon-xs mr-2 mr-md-1"><span class="fas fa-file-alt"></span></span>
-                            <a target="_blank" href="https://themesberg.com/docs/neumorphism-ui/components/forms/">See our Documentation</a> for a detailed technical explanation.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- End of Hero -->
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Forms</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="#">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">Forms</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">Basic Form</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Form Elements</div>
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 col-lg-4">
+									<div class="form-group">
+										<label for="email2">Email Address</label>
+										<input type="email" class="form-control" id="email2" placeholder="Enter Email">
+										<small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" class="form-control" id="password" placeholder="Password">
+									</div>
+									<div class="form-group form-inline">
+										<label for="inlineinput" class="col-md-3 col-form-label">Inline Input</label>
+										<div class="col-md-9 p-0">
+											<input type="text" class="form-control input-full" id="inlineinput" placeholder="Enter Input">
+										</div>
+									</div>
+									<div class="form-group has-success">
+										<label for="successInput">Success Input</label>
+										<input type="text" id="successInput" value="Success" class="form-control">
+									</div>
+									<div class="form-group has-error has-feedback">
+										<label for="errorInput">Error Input</label>
+										<input type="text" id="errorInput" value="Error" class="form-control">
+										<small id="emailHelp" class="form-text text-muted">Please provide a valid informations.</small>
+									</div>
+									<div class="form-group">
+										<label for="disableinput">Disable Input</label>
+										<input type="text" class="form-control" id="disableinput" placeholder="Enter Input" disabled>
+									</div>
+									<div class="form-check">
+										<label>Gender</label><br/>
+										<label class="form-radio-label">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value=""  checked="">
+											<span class="form-radio-sign">Male</span>
+										</label>
+										<label class="form-radio-label ml-3">
+											<input class="form-radio-input" type="radio" name="optionsRadios" value="">
+											<span class="form-radio-sign">Female</span>
+										</label>
+									</div>
+									<div class="form-group">
+										<label class="control-label">
+											Static
+										</label> 
+										<p class="form-control-static">hello@example.com</p> 
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlSelect1">Example select</label>
+										<select class="form-control" id="exampleFormControlSelect1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlSelect2">Example multiple select</label>
+										<select multiple class="form-control" id="exampleFormControlSelect2">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="exampleFormControlFile1">Example file input</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+									<div class="form-group">
+										<label for="comment">Comment</label>
+										<textarea class="form-control" id="comment" rows="5">
 
-    <div class="section section-lg bg-primary text-dark pb-0">
-    <div class="container">
-        <!-- Title -->
-        <div class="row">
-            <div class="col">
-                <h2 class="h5">Default Forms</h2>
-            </div>
-        </div>
-        <!-- End of Title -->
-    </div>
-    </div>
-
-    <!-- Section -->
-    <div class="section section-lg pt-4">
-        <div class="container">
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Form -->
-                    <div class="form-group mb-4">
-                        <label for="exampleInputEmail67">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail67" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label for="exampleInputIcon1">Icon Left</label>
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><span class="fas fa-search"></span></span>
-                            </div>
-                            <input class="form-control" id="exampleInputIcon1" placeholder="Icon Left" type="text" aria-label="Input with icon left">
-                        </div>
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label for="exampleInputIcon2">Icon Right</label>
-                        <div class="input-group mb-4">
-                            <input class="form-control" id="exampleInputIcon2" placeholder="Icon Right" aria-label="Input group" type="text">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><span class="fas fa-search"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <div class="input-group mb-4">
-                            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password" aria-label="Password">
-                            <div class="input-group-append">
-                                <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Form -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Form -->
-                    <fieldset disabled>
-                        <legend class="h6">Disabled Inputs</legend>
-                        <div class="form-group">
-                            <label for="disabledTextInput">Name</label>
-                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-                        </div>
-                        <div class="form-group">
-                            <label for="disabledSelect">Disabled select menu</label>
-                            <select id="disabledSelect" class="form-control">
-                            <option>Disabled select</option>
-                            </select>
-                        </div>
-                    </fieldset>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Country</label>
-                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                            <option selected>Choose...</option>
-                            <option value="1">United States</option>
-                            <option value="2">Germany</option>
-                            <option value="3">Canada</option>
-                        </select>
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" placeholder="Enter your message..." id="exampleFormControlTextarea1" rows="4"></textarea>
-                    </div>
-                    <!-- End of Form -->
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label for="validationServer01">First name</label>
-                        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-                        <div class="valid-feedback">
-                        Looks good!
-                        </div>                
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="form-group mb-4">
-                        <label for="validationServerUsername">Username</label>
-                        <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
-                        <div class="invalid-feedback">
-                        Please choose a username.
-                        </div>               
-                    </div>
-                    <!-- End of Form -->
-                    <!-- Form -->
-                    <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="customFile" aria-label="File upload">
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div>
-                    <!-- End of Form -->
-                </div>
-            </div>
-            <h3 class="h5">Range Sliders</h3>
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-lg-6 col-sm-6">
-                    <!-- Simple slider -->
-                    <div class="input-slider-container">
-                        <div id="input-slider-forms" class="input-slider" data-range-value-min="100" data-range-value-max="500"></div>
-                        <!-- Input slider values -->
-                        <div class="row mt-3 d-none">
-                            <div class="col-6">
-                                <span class="range-slider-value" data-range-value-low="200"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Slider -->
-                </div>
-                <!-- Range slider -->
-                <div class="col-lg-6 col-sm-6">
-                    <!-- Range slider container -->
-                    <div id="input-slider-range" data-range-value-min="100" data-range-value-max="500"></div>
-                    <!-- Range slider values -->
-                    <div class="row d-none">
-                        <div class="col-6">
-                            <span class="range-slider-value value-low" data-range-value-low="200" id="input-slider-range-value-low"></span>
-                        </div>
-                        <div class="col-6 text-right">
-                            <span class="range-slider-value value-high" data-range-value-high="400" id="input-slider-range-value-high"></span>
-                        </div>
-                    </div>
-                    <!-- End of range slider values -->
-                </div>
-            </div>
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-3 col-lg-2">
-                    <!-- Range slider container -->
-                    <div id="input-slider-vertical-1" data-range-value-min="100" data-range-value-max="500"></div>
-                    <!-- Range slider values -->
-                    <div class="row d-none">
-                        <div class="col-6">
-                            <span class="range-slider-value value-low" data-range-value-low="200" id="input-slider-range-value-low-3"></span>
-                        </div>
-                        <div class="col-6 text-right">
-                            <span class="range-slider-value value-high" data-range-value-high="400" id="input-slider-range-value-high-3"></span>
-                        </div>
-                    </div>
-                    <!-- End of range slider values -->
-                </div>
-                <div class="col-3 col-lg-2">
-                    <!-- Range slider container -->
-                    <div id="input-slider-vertical-2" data-range-value-min="100" data-range-value-max="500"></div>
-                    <!-- Range slider values -->
-                    <div class="row d-none">
-                        <div class="col-6">
-                            <span class="range-slider-value value-low" data-range-value-low="200" id="input-slider-range-value-low-4"></span>
-                        </div>
-                        <div class="col-6 text-right">
-                            <span class="range-slider-value value-high" data-range-value-high="400" id="input-slider-range-value-high-4"></span>
-                        </div>
-                    </div>
-                    <!-- End of range slider values -->
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col-lg-3 col-md-6">
-                    <!-- Checkboxes -->
-                    <div class="mb-3">
-                        <span class="h6 font-weight-bold">Checkboxes Square</span>
-                    </div>
-                    <div class="form-check square-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck111" checked>
-                        <label class="form-check-label" for="defaultCheck111">
-                        Active checkbox
-                        </label>
-                    </div>
-                    <div class="form-check square-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck222">
-                        <label class="form-check-label" for="defaultCheck222">
-                        Option 1 
-                        </label>
-                    </div>
-                    <div class="form-check square-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck333">
-                        <label class="form-check-label" for="defaultCheck333">
-                            Option 2 
-                        </label>
-                    </div>
-                    <div class="form-check square-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck444" disabled>
-                        <label class="form-check-label" for="defaultCheck444">
-                        Disabled checkbox
-                        </label>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <!-- Checkboxes -->
-                    <div class="mb-3">
-                        <span class="h6 font-weight-bold">Checkboxes Round</span>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck555" checked>
-                        <label class="form-check-label" for="defaultCheck555">
-                        Active checkbox
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck666">
-                        <label class="form-check-label" for="defaultCheck666">
-                            Option 1 
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck777">
-                        <label class="form-check-label" for="defaultCheck777">
-                            Option 2 
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck888" disabled>
-                        <label class="form-check-label" for="defaultCheck888">
-                        Disabled checkbox
-                        </label>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
-                    <!-- Radio -->
-                    <fieldset>
-                        <legend class="h6">Radios</legend>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                            Default radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                            <label class="form-check-label" for="exampleRadios2">
-                            Second default radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                            <label class="form-check-label" for="exampleRadios3">
-                            Disabled radio
-                            </label>
-                        </div>
-                        <!-- End of Radio -->
-                    </fieldset>
-                </div>
-                <div class="col-lg-3 col-sm-6 mt-4 mt-md-0">
-                    <div class="mb-3">
-                        <span class="h6 font-weight-bold">Switches</span>
-                    </div>
-                    <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
-                        </div>
-                        <div class="custom-control custom-switch">
-                        <input type="checkbox" class="custom-control-input" disabled id="customSwitch2">
-                        <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
-                    </div>
-                </div>
-            </div>
-            <div class="row mb-4 mb-lg-5">
-                <div class="col-12 col-md-4">
-                    <!-- Form -->
-                    <div class="form-group">
-                        <label class="h6" for="exampleInputDate1">Choose a date</label>
-                        <div class="input-group mb-4">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><span class="far fa-calendar-alt"></span></span>
-                            </div>
-                            <input class="form-control datepicker" id="exampleInputDate1" placeholder="Select date" type="text" aria-label="Date with icon left">
-                        </div>
-                    </div>
-                    <!-- End of Form -->
-                </div>
-                <div class="col-12 col-md-8">
-                    <!-- Form -->
-                    <div class="input-daterange datepicker row align-items-center">
-                        <div class="col">
-                            <label class="h6" for="exampleInputDate2">From</label>
-                            <div class="form-group">
-                                <div class="input-group input-group-border">
-                                    <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
-                                    <input class="form-control datepicker" id="exampleInputDate2" placeholder="Start date" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label class="h6" for="exampleInputDate3">To</label>
-                                <div class="input-group input-group-border">
-                                    <div class="input-group-prepend"><span class="input-group-text"><span class="far fa-calendar-alt"></span></span></div>
-                                    <input class="form-control datepicker" id="exampleInputDate3" placeholder="End date" type="text">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Form -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End of Section -->
+										</textarea>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" value="">
+											<span class="form-check-sign">Agree with terms and conditions</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">				
+									<div class="form-group">
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">@</span>
+											</div>
+											<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group mb-3">
+											<input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+											<div class="input-group-append">
+												<span class="input-group-text" id="basic-addon2">@example.com</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="basic-url">Your vanity URL</label>
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+											</div>
+											<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group mb-3">
+											<div class="input-group-prepend">
+												<span class="input-group-text">$</span>
+											</div>
+											<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+											<div class="input-group-append">
+												<span class="input-group-text">.00</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text">With textarea</span>
+											</div>
+											<textarea class="form-control" aria-label="With textarea"></textarea>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<button class="btn btn-default btn-border" type="button">Button</button>
+											</div>
+											<input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<input type="text" class="form-control" aria-label="Text input with dropdown button">
+											<div class="input-group-append">
+												<button class="btn btn-primary btn-border dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+												<div class="dropdown-menu">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+													<div role="separator" class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Separated link</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-icon">
+											<input type="text" class="form-control" placeholder="Search for...">
+											<span class="input-icon-addon">
+												<i class="fa fa-search"></i>
+											</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-icon">
+											<span class="input-icon-addon">
+												<i class="fa fa-user"></i>
+											</span>
+											<input type="text" class="form-control" placeholder="Username">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Image Check</label>
+										<div class="row">
+											<div class="col-6 col-sm-4">
+												<label class="imagecheck mb-4">
+													<input name="imagecheck" type="checkbox" value="1" class="imagecheck-input">
+													<figure class="imagecheck-figure">
+														<img src="/static/assets/img/examples/product1.jpg" alt="title" class="imagecheck-image">
+													</figure>
+												</label>
+											</div>
+											<div class="col-6 col-sm-4">
+												<label class="imagecheck mb-4">
+													<input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked="">
+													<figure class="imagecheck-figure">
+														<img src="/static/assets/img/examples/product4.jpg" alt="title" class="imagecheck-image">
+													</figure>
+												</label>
+											</div>
+											<div class="col-6 col-sm-4">
+												<label class="imagecheck mb-4">
+													<input name="imagecheck" type="checkbox" value="3" class="imagecheck-input">
+													<figure class="imagecheck-figure">
+														<img src="/static/assets/img/examples/product3.jpg" alt="title" class="imagecheck-image">
+													</figure>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Color Input</label>
+										<div class="row gutters-xs">
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="dark" class="colorinput-input">
+													<span class="colorinput-color bg-dark"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="primary" class="colorinput-input">
+													<span class="colorinput-color bg-primary"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="secondary" class="colorinput-input">
+													<span class="colorinput-color bg-secondary"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="info" class="colorinput-input">
+													<span class="colorinput-color bg-info"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="success" class="colorinput-input">
+													<span class="colorinput-color bg-success"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="danger" class="colorinput-input">
+													<span class="colorinput-color bg-danger"></span>
+												</label>
+											</div>
+											<div class="col-auto">
+												<label class="colorinput">
+													<input name="color" type="checkbox" value="warning" class="colorinput-input">
+													<span class="colorinput-color bg-warning"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Size</label>
+										<div class="selectgroup w-100">
+											<label class="selectgroup-item">
+												<input type="radio" name="value" value="50" class="selectgroup-input" checked="">
+												<span class="selectgroup-button">S</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="value" value="100" class="selectgroup-input">
+												<span class="selectgroup-button">M</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="value" value="150" class="selectgroup-input">
+												<span class="selectgroup-button">L</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="value" value="200" class="selectgroup-input">
+												<span class="selectgroup-button">XL</span>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Icons input</label>
+										<div class="selectgroup w-100">
+											<label class="selectgroup-item">
+												<input type="radio" name="transportation" value="2" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-smartphone"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="transportation" value="1" class="selectgroup-input" checked="">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-tablet"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="transportation" value="6" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="icon-screen-desktop"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="transportation" value="6" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-times"></i></span>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label d-block">Icon input</label>
+										<div class="selectgroup selectgroup-secondary selectgroup-pills">
+											<label class="selectgroup-item">
+												<input type="radio" name="icon-input" value="1" class="selectgroup-input" checked="">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-sun"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="icon-input" value="2" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-moon"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="icon-input" value="3" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-tint"></i></span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="radio" name="icon-input" value="4" class="selectgroup-input">
+												<span class="selectgroup-button selectgroup-button-icon"><i class="fa fa-cloud"></i></span>
+											</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="form-label">Your skills</label>
+										<div class="selectgroup selectgroup-pills">
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="HTML" class="selectgroup-input" checked="">
+												<span class="selectgroup-button">HTML</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="CSS" class="selectgroup-input">
+												<span class="selectgroup-button">CSS</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="PHP" class="selectgroup-input">
+												<span class="selectgroup-button">PHP</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="JavaScript" class="selectgroup-input">
+												<span class="selectgroup-button">JavaScript</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+												<span class="selectgroup-button">Ruby</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="Ruby" class="selectgroup-input">
+												<span class="selectgroup-button">Ruby</span>
+											</label>
+											<label class="selectgroup-item">
+												<input type="checkbox" name="value" value="C++" class="selectgroup-input">
+												<span class="selectgroup-button">C++</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4">
+									<label class="mb-3"><b>Form Group Default</b></label>
+									<div class="form-group form-group-default">
+										<label>Input</label>
+										<input id="Name" type="text" class="form-control" placeholder="Fill Name">
+									</div>
+									<div class="form-group form-group-default">
+										<label>Select</label>
+										<select class="form-control" id="formGroupDefaultSelect">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<label class="mt-3 mb-3"><b>Form Floating Label</b></label>
+									<div class="form-group form-floating-label">
+										<input id="inputFloatingLabel" type="text" class="form-control input-border-bottom" required>
+										<label for="inputFloatingLabel" class="placeholder">Input</label>
+									</div>
+									<div class="form-group form-floating-label">
+										<select class="form-control input-border-bottom" id="selectFloatingLabel" required>
+											<option value="">&nbsp;</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<label for="selectFloatingLabel" class="placeholder">Select</label>
+									</div>
+									<div class="form-group form-floating-label">
+										<input id="inputFloatingLabel2" type="text" class="form-control input-solid" required>
+										<label for="inputFloatingLabel2" class="placeholder">Input</label>
+									</div>
+									<div class="form-group form-floating-label">
+										<select class="form-control input-solid" id="selectFloatingLabel2" required>
+											<option value="">&nbsp;</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+										<label for="selectFloatingLabel2" class="placeholder">Select</label>
+									</div>
+									
+									<div class="form-group">
+										<label for="largeInput">Large Input</label>
+										<input type="text" class="form-control form-control-lg" id="largeInput" placeholder="Large Input">
+									</div>
+									<div class="form-group">
+										<label for="largeInput">Default Input</label>
+										<input type="text" class="form-control form-control" id="defaultInput" placeholder="Default Input">
+									</div>
+									<div class="form-group">
+										<label for="smallInput">Small Input</label>
+										<input type="text" class="form-control form-control-sm" id="smallInput" placeholder="Small Input">
+									</div>
+									<div class="form-group">
+										<label for="largeSelect">Large Select</label>
+										<select class="form-control form-control-lg" id="largeSelect">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="defaultSelect">Default Select</label>
+										<select class="form-control form-control" id="defaultSelect">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="smallSelect">Small Select</label>
+										<select class="form-control form-control-sm" id="smallSelect">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-action">
+							<button class="btn btn-success">Submit</button>
+							<button class="btn btn-danger">Cancel</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %}
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+
+{% endblock javascripts %}	

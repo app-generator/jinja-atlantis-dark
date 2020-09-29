@@ -1,170 +1,476 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} UI Tables {% endblock %} 
+{% block title %} Tables {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
 
 {% block content %}
 
-    <!-- Hero -->
-    <div class="section-header pb-6 bg-primary overflow-hidden text-center border-bottom border-light">
-    <div class="container z-2">
-        <div class="row mb-4 justify-content-center">
-            <div class="col-12 col-md-8 col-lg-7">
-                <h1 class="display-3 mb-4">Tables</h1>
-                <p class="lead">Examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-6">
-                <div class="alert shadow-inset">
-                    <div class="d-flex">
-                        <div class="alert-inner--text">
-                            <span class="icon text-danger icon-xs mr-2 mr-md-1"><span class="fas fa-file-alt"></span></span>
-                            <a target="_blank" href="https://themesberg.com/docs/neumorphism-ui/components/tables/">See our Documentation</a> for a detailed technical explanation.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- End of Hero -->
-
-    <!-- End of Hero -->
-    <div class="section bg-primary text-dark section-lg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="mb-4">
-                        <span class="h5">Default table</span>
-                    </div>
-                    <div class="mb-5">
-                        <table class="table shadow-soft rounded">
-                            <tr>
-                                <th class="border-0" scope="col" id="class">Class</th>
-                                <th class="border-0" scope="col" id="teacher">Teacher</th>
-                                <th class="border-0" scope="col" id="males">Males</th>
-                                <th class="border-0" scope="col" id="females">Females</th>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="firstyear" rowspan="2">First Year</th>
-                                <th scope="row" id="Bolter" headers="firstyear teacher">D. Bolter</th>
-                                <td headers="firstyear Bolter males">5</td>
-                                <td headers="firstyear Bolter females">4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Cheetham" headers="firstyear teacher">A. Cheetham</th>
-                                <td headers="firstyear Cheetham males">7</td>
-                                <td headers="firstyear Cheetham females">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="secondyear" rowspan="3">Second Year</th>
-                                <th scope="row" id="Lam" headers="secondyear teacher">M. Lam</th>
-                                <td headers="secondyear Lam males">3</td>
-                                <td headers="secondyear Lam females">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Crossy" headers="secondyear teacher">S. Crossy</th>
-                                <td headers="secondyear Crossy males">4</td>
-                                <td headers="secondyear Crossy females">3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Forsyth" headers="secondyear teacher">A. Forsyth</th>
-                                <td headers="secondyear Forsyth males">6</td>
-                                <td headers="secondyear Forsyth females">9</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <span class="h5">Hoverable rows</span>
-                        </div>
-                        <table class="table table-hover shadow-inset rounded">
-                            <tr>
-                                <th class="border-0" scope="col" id="class3">Class</th>
-                                <th class="border-0" scope="col" id="teacher3">Teacher</th>
-                                <th class="border-0" scope="col" id="males3">Males</th>
-                                <th class="border-0" scope="col" id="females3">Females</th>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="firstyear3" rowspan="2">First Year</th>
-                                <th scope="row" id="Bolter3" headers="firstyear3 teacher3">D. Bolter</th>
-                                <td headers="firstyear3 Bolter3 males3">5</td>
-                                <td headers="firstyear3 Bolter3 females3">4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Cheetham3" headers="firstyear3 teacher3">A. Cheetham</th>
-                                <td headers="firstyear3 Cheetham3 males3">7</td>
-                                <td headers="firstyear3 Cheetham3 females3">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="secondyear3" rowspan="3">Second Year</th>
-                                <th scope="row" id="Lam3" headers="secondyear3 teacher3">M. Lam</th>
-                                <td headers="secondyear3 Lam3 males3">3</td>
-                                <td headers="secondyear3 Lam3 females3">9</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Crossy3" headers="secondyear3 teacher3">S. Crossy</th>
-                                <td headers="secondyear3 Crossy3 males3">4</td>
-                                <td headers="secondyear3 Crossy3 females3">3</td>
-                            </tr>
-                            <tr>
-                                <th scope="row" id="Forsyth3" headers="secondyear3 teacher3">A. Forsyth</th>
-                                <td headers="secondyear3 Forsyth3 males3">6</td>
-                                <td headers="secondyear3 Forsyth3 females3">9</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <span class="h5">Responsive Table</span>
-                        </div>
-                        <div class="table-responsive-sm shadow-soft rounded">
-                            <table class="table table-striped">
-                                <tr>
-                                    <th class="border-0" scope="col" id="class2">Class</th>
-                                    <th class="border-0" scope="col" id="teacher2">Teacher</th>
-                                    <th class="border-0" scope="col" id="males2">Males</th>
-                                    <th class="border-0" scope="col" id="females2">Females</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" id="firstyear2" rowspan="2">First Year</th>
-                                    <th scope="row" id="Bolter2" headers="firstyear2 teacher2">D. Bolter</th>
-                                    <td headers="firstyear2 Bolter2 males2">5</td>
-                                    <td headers="firstyear2 Bolter2 females2">4</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" id="Cheetham2" headers="firstyear2 teacher2">A. Cheetham</th>
-                                    <td headers="firstyear2 Cheetham2 males2">7</td>
-                                    <td headers="firstyear2 Cheetham2 females2">9</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" id="secondyear2" rowspan="3">Second Year</th>
-                                    <th scope="row" id="Lam2" headers="secondyear2 teacher2">M. Lam</th>
-                                    <td headers="secondyear2 Lam2 males2">3</td>
-                                    <td headers="secondyear2 Lam2 females2">9</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" id="Crossy2" headers="secondyear2 teacher2">S. Crossy</th>
-                                    <td headers="secondyear2 Crossy2 males2">4</td>
-                                    <td headers="secondyear2 Crossy2 females2">3</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" id="Forsyth2" headers="secondyear2 teacher2">A. Forsyth</th>
-                                    <td headers="secondyear2 Forsyth2 males2">6</td>
-                                    <td headers="secondyear2 Forsyth2 females2">9</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="content">
+		<div class="page-inner">
+			<div class="page-header">
+				<h4 class="page-title">Tables</h4>
+				<ul class="breadcrumbs">
+					<li class="nav-home">
+						<a href="#">
+							<i class="flaticon-home"></i>
+						</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">Tables</a>
+					</li>
+					<li class="separator">
+						<i class="flaticon-right-arrow"></i>
+					</li>
+					<li class="nav-item">
+						<a href="#">Basic Tables</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Basic Table</div>
+						</div>
+						<div class="card-body">
+							<div class="card-sub">									
+								This is the basic table view of the ready dashboard :
+							</div>
+							<table class="table mt-3">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Striped Rows</div>
+						</div>
+						<div class="card-body">
+							<div class="card-sub">											
+								Add <code class="highlighter-rouge">.table-striped</code> to rows the striped table
+							</div>
+							<table class="table table-striped mt-3">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="card-sub">
+								Add <code class="#highlighter-rouge">.table-striped-bg-*states</code> to change background from striped rows
+							</div>
+							<table class="table table-striped table-striped-bg-default mt-3">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-striped table-striped-bg-danger mt-4">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Responsive Table</div>
+						</div>
+						<div class="card-body">
+							<div class="card-sub">
+								Create responsive tables by wrapping any table with <code class="highlighter-rouge">.table-responsive</code> <code class="highlighter-rouge">DIV</code> to make them scroll horizontally on small devices
+							</div>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Table heading</th>
+											<th>Table heading</th>
+											<th>Table heading</th>
+											<th>Table heading</th>
+											<th>Table heading</th>
+											<th>Table heading</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+											<td>Table cell</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Hoverable Table</div>
+						</div>
+						<div class="card-body">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Bordered Table</div>
+						</div>
+						<div class="card-body">
+							<div class="card-sub">
+								Add <code class="highlighter-rouge">.table-bordered</code> to create a bordered table
+							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="card-sub">											
+								You can also add <code class="highlighter-rouge">.table-bordered-bd-*states</code> to change the border color of the table
+							</div>
+							<table class="table table-bordered table-bordered-bd-warning mt-4">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="card-sub">
+								It can also add <code class="highlight-rouge">.table-head-bg-*states</code> so that the table header has the same color as the border color of the table
+							</div>
+							<table class="table table-bordered table-head-bg-info table-bordered-bd-info mt-4">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<div class="card-title">Table Head States</div>
+						</div>
+						<div class="card-body">
+							<table class="table table-head-bg-success">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-head-bg-primary mt-4">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">First</th>
+										<th scope="col">Last</th>
+										<th scope="col">Handle</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Mark</td>
+										<td>Otto</td>
+										<td>@mdo</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Jacob</td>
+										<td>Thornton</td>
+										<td>@fat</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td colspan="2">Larry the Bird</td>
+										<td>@twitter</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="/static/assets/js/setting-demo2.js"></script>
+	<script>
+		$('#displayNotif').on('click', function(){
+			var placementFrom = $('#notify_placement_from option:selected').val();
+			var placementAlign = $('#notify_placement_align option:selected').val();
+			var state = $('#notify_state option:selected').val();
+			var style = $('#notify_style option:selected').val();
+			var content = {};
+
+			content.message = 'Turning standard Bootstrap alerts into "notify" like notifications';
+			content.title = 'Bootstrap notify';
+			if (style == "withicon") {
+				content.icon = 'fa fa-bell';
+			} else {
+				content.icon = 'none';
+			}
+			content.url = 'index.html';
+			content.target = '_blank';
+
+			$.notify(content,{
+				type: state,
+				placement: {
+					from: placementFrom,
+					align: placementAlign
+				},
+				time: 1000,
+			});
+		});
+	</script>
+	
+{% endblock javascripts %}
