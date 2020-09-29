@@ -1,6 +1,6 @@
 # [Jinja Template](https://appseed.us/jinja-template) - [Atlantis Dark](https://appseed.us/jinja-template/jinja-template-atlantis-dark)
 
-> Seed project coded in Flask/Jinja on top of Pixel UI KIt (free version) - Features:
+> Seed project coded in Flask/Jinja on top of Atlantis Lite (free version) - Features:
 
 - UI Kit: **Atlantis Lite** (Free Version) by **ThemeKita**
 - Render Engine: [Jinja2](https://jinja.palletsprojects.com/)
