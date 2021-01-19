@@ -9,8 +9,8 @@
 
 > Links
 
-- [Jinja Template Atlantis Dark](https://appseed.us/jinja-template/jinja-template-atlantis-dark) - Product page
-- [Jinja Template Atlantis Dark - Demo](https://jinja-template-atlantis-dark.appseed.us/) - LIVE Demo
+- [Jinja Atlantis Dark](https://appseed.us/jinja-template/jinja-template-atlantis-dark) - Product page
+- [Jinja Atlantis Dark - Demo](https://jinja-atlantis-dark.appseed-srv1.com/) - LIVE Demo
 - [Atlantis Lite - UI Docs](https://atlantis-lite.appseed.us/) - how to customize the UI
 
 <br />
