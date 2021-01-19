@@ -65,7 +65,7 @@ $('.changeBackgroundColor').on('click', function(){
 function customCheckColor(){
 	var logoHeader = $('.logo-header').attr('data-background-color');
 	if (logoHeader !== "white") {
-		$('.logo-header .navbar-brand').attr('src', '//assets/img/logo.svg');
+		$('.logo-header .navbar-brand').attr('src', '/static/assets/img/logo.svg');
 	} else {
 		$('.logo-header .navbar-brand').attr('src', '/static/assets/img/logo2.svg');
 	}

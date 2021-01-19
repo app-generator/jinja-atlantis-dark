@@ -38,7 +38,7 @@
 						</div>
 					</div>
 					<ul class="nav nav-primary">
-						<li class="nav-item active">
+						<li class="nav-item {% if 'index' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
 								<i class="fas fa-home"></i>
 								<p>Dashboard</p>
@@ -60,7 +60,7 @@
 							</span>
 							<h4 class="text-section">Components</h4>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'ui-' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#base">
 								<i class="fas fa-layer-group"></i>
 								<p>Base</p>
@@ -121,7 +121,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'layout' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#sidebarLayouts">
 								<i class="fas fa-th-list"></i>
 								<p>Sidebar Layouts</p>
@@ -157,7 +157,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'forms' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#forms">
 								<i class="fas fa-pen-square"></i>
 								<p>Forms</p>
@@ -166,14 +166,14 @@
 							<div class="collapse" id="forms">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="/ui-forms.html">
+										<a href="/forms.html">
 											<span class="sub-item">Basic Form</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'tables' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#tables">
 								<i class="fas fa-table"></i>
 								<p>Tables</p>
@@ -182,19 +182,19 @@
 							<div class="collapse" id="tables">
 								<ul class="nav nav-collapse">
 									<li>
-										<a href="/ui-tables.html">
+										<a href="/tables-simple.html">
 											<span class="sub-item">Basic Table</span>
 										</a>
 									</li>
 									<li>
-										<a href="/ui-datatables.html">
+										<a href="/tables-data.html">
 											<span class="sub-item">Datatables</span>
 										</a>
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'maps' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#maps">
 								<i class="fas fa-map-marker-alt"></i>
 								<p>Maps</p>
@@ -210,7 +210,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'charts' in segment %} active {% endif %}">
 							<a data-toggle="collapse" href="#charts">
 								<i class="far fa-chart-bar"></i>
 								<p>Charts</p>
@@ -231,7 +231,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item {% if 'widgets' in segment %} active {% endif %}">
 							<a href="/widgets.html">
 								<i class="fas fa-desktop"></i>
 								<p>Widgets</p>
@@ -291,9 +291,9 @@
 						</li>
 						<li class="mx-4 mt-2">
                             <a target="_blank"
-                               href="https://appseed.us/jinja-template/jinja-template-atlantis-dark" 
-                               class="btn btn-primary btn-block">
-                                <span class="btn-label mr-2"> <i class="fa fa-heart"></i> </span>See Product</a> 
+                               href="https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark-pro" 
+                               class="btn btn-danger btn-block">
+                                <span class="btn-label mr-2"> <i class="fa fa-rocket"></i> </span>PRO Version</a> 
 						</li>
 					</ul>
 				</div>
