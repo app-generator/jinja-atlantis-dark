@@ -4,7 +4,7 @@
 
 <br />
 
-- UI Kit: ****[Atlantis Lite](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark)**** (Free Version) by **ThemeKita**
+- UI Kit: **[Atlantis Lite](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark)** (Free Version) by **ThemeKita**
 - Render Engine: [Jinja2](https://jinja.palletsprojects.com/)
 - Framework: Flask (no database, no hard dependencies)
 - Free support via **Github** and [Discord](https://discord.gg/fZC6hup).
