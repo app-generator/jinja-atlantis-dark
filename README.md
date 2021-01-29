@@ -1,8 +1,8 @@
-# [Jinja Template](https://appseed.us/jinja-template) - [Atlantis Dark](https://appseed.us/jinja-template/jinja-template-atlantis-dark)
+# [Jinja Template](https://appseed.us/jinja-template) - **[Atlantis Lite](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark)**
 
 > Seed project coded in Flask/Jinja on top of Atlantis Lite (free version) - Features:
 
-- UI Kit: **Atlantis Lite** (Free Version) by **ThemeKita**
+- UI Kit: ****[Atlantis Lite](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark)**** (Free Version) by **ThemeKita**
 - Render Engine: [Jinja2](https://jinja.palletsprojects.com/)
 - Framework: Flask (no database, no hard dependencies)
 - Free support via **Github** and [Discord](https://discord.gg/fZC6hup).
@@ -182,4 +182,4 @@ Visit `http://localhost:8001` in your browser. The app should be up & running.
 <br />
 
 ---
-[Jinja Template - Atlantis Dark](https://appseed.us/jinja-template/jinja-template-atlantis-dark) - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
+[Jinja Template](https://appseed.us/jinja-template) **[Atlantis Lite](https://appseed.us/admin-dashboards/flask-dashboard-atlantis-dark)** - Provided by **AppSeed** [Web App Generator](https://appseed.us/app-generator).
