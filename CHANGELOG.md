@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.0.2] 2021-01-19
+## [1.0.2] 2021-06-09
 ### Improvements
 
 - Built with [Atlantis Dark Generator](https://appseed.us/generator/atlantis-dark/)
