@@ -1,0 +1,23 @@
+{
+    "backend": "flask",
+    "db_name": "",
+    "db_pass": "",
+    "db_type": "",
+    "db_user": "",
+    "dbms": "0",
+    "description": "generated product",
+    "design": "atlantis-dark",
+    "docker": "1",
+    "err_code": 0,
+    "frontend": "",
+    "heroku": "0",
+    "pattern": "mvc",
+    "pro": "0",
+    "task_id": "f830ad43-f8a5-4f1a-9067-e49e399c1661",
+    "task_info": "Task is finished",
+    "task_output": "f830ad43-f8a5-4f1a-9067-e49e399c1661.zip",
+    "task_result": "SUCCESS",
+    "task_state": "FINISHED",
+    "task_ts_end": "2022-06-09-11-46-10",
+    "task_ts_start": "2022-06-09-11-45-41"
+}
